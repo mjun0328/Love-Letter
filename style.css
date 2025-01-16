@@ -1,0 +1,77 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
+
+body {
+  font-family: "Pretendard Variable", Pretendard, -apple-system,
+    BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI",
+    "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  background-color: #f2ecec;
+  padding: 5rem 0;
+}
+
+.scroll {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 1rem;
+  background-color: #ffffffa0;
+  backdrop-filter: blur(0.2rem);
+  user-select: none;
+}
+
+.scroll > div {
+  position: relative;
+  width: 0%;
+  height: 100%;
+  background-color: #f9dcdc;
+}
+
+.scroll img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 2rem;
+}
+
+.contents {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  width: 70%;
+  background-color: #fff;
+  margin: auto;
+  padding: 3rem 3rem;
+  border-radius: 0.6rem;
+  box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+}
+
+.contents p {
+  font-size: 1.2rem;
+  font-weight: 300;
+  text-align: justify;
+  line-height: 1.8;
+  user-select: auto;
+  margin: 0;
+}
+
+.contents p::selection {
+  background-color: #faefef;
+}
+
+@media (max-width: 450px) {
+  body {
+    padding: 3rem 0;
+  }
+
+  .contents {
+    gap: 1rem;
+    width: 95%;
+    padding: 1rem 1rem;
+  }
+
+  .contents p {
+    font-size: 0.9rem;
+  }
+}
